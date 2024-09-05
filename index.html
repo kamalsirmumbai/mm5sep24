@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title> Motivational Msg App by Kamal Sir </title>
+		<style>
+			* { font-size: 40px; font-family: Arial; }
+			body { background-color: lightblue; }
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1> Motivational Msg App </h1>
+			<form onsubmit="show()">
+			<input type="submit"	value="Show Message" />
+			</form>
+			<h2 id="msg" />
+
+
+			<script>
+				function show()
+				{
+					event.preventDefault();
+					let msg = document.getElementById("msg");
+
+					let messages = [
+						"Persist, believe, achieve!", 
+						"Focus, hustle, succeed!", 
+						"Dream, plan, execute!", 
+						"Adapt, grow, shine!",
+						"Rise, lead, inspire!",
+						"Push, overcome, win!",
+						"Trust, act, prevail!"
+					];
+					let r = parseInt(Math.random() * messages.length);
+					msg.innerHTML = messages[r];
+
+				}	
+			</script>
+		</center>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
